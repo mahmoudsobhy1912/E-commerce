@@ -11,3 +11,107 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+
+header {
+	width: 100%;
+}
+
+nav{
+	background-color: #333333;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px 50px;
+}
+
+nav li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 15px;
+}
+
+nav li a {
+	color: #ffffff;
+	text-decoration:none ;
+	font-size: 20px;
+}
+
+form{
+	background-color: #F1F1F1;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 35px;
+	margin-top: 70px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.384);
+}
+
+.container form div {
+  margin-bottom: 10px;
+}
+
+span {
+  color: red;
+}
+
+input{
+	width: 100%;
+	margin: 5px 0 10px 0;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #c7c0c0;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+button{
+	margin: 13px 0 0 0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: medium;
+	background-color: #700608;
+	color: #ffffff;
+	border: none ;
+	border-radius: 5px;
+}
+
+input:focus{
+	outline-color: #700608;
+}
+
+button:hover{
+	background-color: #cf1c1f;
+}
+
+button:focus{
+	outline-color: #700608;
+}
+
+.home li {
+	list-style: none;
+	width: 25%;
+}
+
+.home ul {
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card img{
+	width: 180px;
+	height: 200px;
+}
