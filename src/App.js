@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 // import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
+// import Item from "./components/Item";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" exact component={Home}></Route>
               {/* <Route path="/Signin" component={Signin}></Route> */}
               <Route path="/Signup" component={Signup}></Route>
+              {/* <Route path="/:id" component={Item}></Route> */}
             </Switch>
         </main>
       </BrowserRouter>
