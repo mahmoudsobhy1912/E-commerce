@@ -23,7 +23,7 @@ function App() {
               <Route path="/" exact component={Home}></Route>
               <Route path="/Signin" component={Signin}></Route>
               <Route path="/Signup" component={Signup}></Route>
-              <Route path="Home/:id" component={Product}></Route>
+              <Route path="/Home/:id" component={Product}></Route>
             </Switch>
         </main>
       </BrowserRouter>

@@ -19,18 +19,28 @@ const Product = (props) => {
     }
 
     let { id } = useParams();
+    
     console.log(item)
+
 
     return (
         // <div className="product">
         //     {
-        //         // item &&
-        //         <h1>{item.name}</h1>
+        //         item &&
+        //         <h1>{item}</h1>
         //     }
 
         // </div>
-        <div>
+        <div className="product">
+            <img src={item[0].photo} alt=""></img>
             <h3>ID: {id}</h3>
+            <h3>Name: {item[0].name}</h3>
+            <h3>price: {item[0].price}</h3>
+            <h3>quantity: {item[0].quantity}</h3>
+            <h3>sold: {item[0].sold}</h3>
+            <h3>seller: {item[0].seller}</h3>
+            <h3>added: {item[0].added}</h3>
+            <h3>Category: {item[0].category}</h3>
         </div>
     );
 }
