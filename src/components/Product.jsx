@@ -1,6 +1,6 @@
 import React, { useState, useEffect  } from 'react';
 import axios from "axios";
-import {useParams} from "react-router-dom";
+// import {useParams} from "react-router-dom";
   
 
 const Product = (props) => {
@@ -18,9 +18,9 @@ const Product = (props) => {
         })
     }
 
-    let { id } = useParams();
+    // let { id } = useParams();
     
-    console.log(item)
+    // console.log(item)
 
 
     return (
@@ -37,7 +37,7 @@ const Product = (props) => {
                 item &&
                 <div>
                     <img src={item[0].photo} alt=""></img>
-                    <h3>ID: {id}</h3>
+                    {/* <h3>ID: {id}</h3> */}
                     <h3>Name: {item[0].name}</h3>
                     <h3>price: {item[0].price}</h3>
                     <h3>quantity: {item[0].quantity}</h3>

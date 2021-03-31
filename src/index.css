@@ -1,10 +1,16 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color:white; */
 }
 
 code {
@@ -14,8 +20,8 @@ code {
 
 .container{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center;
+	align-items: center; */
     flex-direction: column;
 }
 
@@ -24,17 +30,25 @@ header {
 }
 
 nav{
-	background-color: #333333;
+	background-color: #1A355B;
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
 	padding: 0px 50px;
 }
 
 nav li{
 	display: inline-block;
 	list-style: none;
-	margin: 0 15px;
+	padding: 20px 20px;
+}
+
+nav li:hover{
+	background-color: #6685a5a1;
+}
+
+nav .home{
+	margin: auto;
+	float: left;
 }
 
 nav li a {
@@ -44,14 +58,19 @@ nav li a {
 }
 
 form{
-	background-color: #F1F1F1;
+	background-color: #f1f1f1;
 	width: 600px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	padding: 35px;
 	margin-top: 70px;
 	border-radius: 5px;
 	box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.384);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left:50%
 }
 
 .container form div {
@@ -68,12 +87,6 @@ input{
 	padding: 8px;
 	border-radius: 5px;
 	border: 1px solid #c7c0c0;
-}
-
-form{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 button{
@@ -99,9 +112,40 @@ button:focus{
 	outline-color: #700608;
 }
 
-.home li {
+.home p{
+	text-align: center;
+	padding: 30px 0px;
+	font-size: 60px;
+	font-weight:bolder;
+}
+
+.home .label{
+	width:400px;
+	padding: 5px 0px 80px 0px;
+	text-align: center;
+
+}
+
+.home .label label{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+select{
+	padding: 5px;
+	width: 150px;
+}
+
+.home li{
 	list-style: none;
-	width: 25%;
+	width: 30%;
+	padding: 10px 30px;
+}
+.list{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+
 }
 
 .home ul {
@@ -116,6 +160,23 @@ button:focus{
 	height: 200px;
 }
 
+.card h3{
+	text-decoration: none;
+}
+
+.product{
+	/* background-color: turquoise; */
+	padding: 110px;
+	text-align: center;
+
+}
+
+.product h3{
+	padding: 5px;
+}
+
 .product img{
-	
+	max-width: 400px;
+	float: left;
+	padding: 10px;
 }
