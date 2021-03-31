@@ -13,7 +13,7 @@ function App() {
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/Signin">Sign In</Link></li>
+              <li className ="sign"><Link to="/Signin">Sign In</Link></li>
               <li><Link to="/Signup">Sign Up</Link></li>
             </ul>
           </nav>

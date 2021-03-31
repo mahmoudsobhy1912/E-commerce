@@ -23,7 +23,7 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            <p>Welcome in our Store :)</p>
+            <p>Welcome to our Store :)</p>
             <div className="label">
                 <label htmlFor="Category">Category:</label>
                 <select name="Category" onChange={handelFilter}>
@@ -32,8 +32,8 @@ const Home = () => {
                     <option value="Headphones">Headphones</option>
                     <option value="Mobile">Mobile</option>
                 </select>
+               
             </div>
-            
 
             {
                 product &&

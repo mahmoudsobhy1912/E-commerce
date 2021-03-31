@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const Signin = () => {
 
     const [email, setEmail] = useState("");
