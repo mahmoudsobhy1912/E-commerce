@@ -23,19 +23,21 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            <h1>Wellcome in our Store :)</h1>
-
-            <label htmlFor="Category">Category:</label>
-            <select name="Category" onChange={handelFilter}>
-                <option value="">All</option>
-                <option value="Laptop">Laptop</option>
-                <option value="Headphones">Headphones</option>
-                <option value="Mobile">Mobile</option>
-            </select>
+            <p>Welcome to our Store :)</p>
+            <div className="label">
+                <label htmlFor="Category">Category:</label>
+                <select name="Category" onChange={handelFilter}>
+                    <option value="">All</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Headphones">Headphones</option>
+                    <option value="Mobile">Mobile</option>
+                </select>
+               
+            </div>
 
             {
                 product &&
-                <ul>
+                <ul className = "list">
                     {product.filter(item => item.category.includes(filters)).map(el => <li key={el.id}><Card data={el}/></li>)}
                 </ul>
             }
