@@ -1,6 +1,6 @@
 import React, { useState, useEffect  } from 'react';
 import axios from "axios";
-import {useParams} from "react-router-dom";
+// import {useParams} from "react-router-dom";
   
 
 const Product = (props) => {
@@ -9,7 +9,7 @@ const Product = (props) => {
     useEffect(() => {
         loaditem();
         // console.log(match)
-    }, []);
+    });
     
     const loaditem = () => {
         axios.get("https://ecommerce-response.herokuapp.com/")
@@ -18,33 +18,24 @@ const Product = (props) => {
         })
     }
 
-    let { id } = useParams();
-    
-    console.log(item)
+    //let { id } = useParams();
+    //console.log(item)
 
 
     return (
-        // <div className="product">
-        //     {
-        //         item &&
-        //         <h1>{item}</h1>
-        //     }
-
-        // </div>
         
         <div className="product">
             {
                 item &&
                 <div>
                     <img src={item[0].photo} alt=""></img>
-                    <h3>ID: {id}</h3>
                     <h3>Name: {item[0].name}</h3>
-                    <h3>price: {item[0].price}</h3>
-                    <h3>quantity: {item[0].quantity}</h3>
-                    <h3>sold: {item[0].sold}</h3>
+                    <h3>price: {item[0].price}$</h3>
+                    <h3>Available: {item[0].quantity - item[0].sold} Piece</h3>
                     <h3>seller: {item[0].seller}</h3>
                     <h3>added: {item[0].added}</h3>
                     <h3>Category: {item[0].category}</h3>
+                    <button>Add to Cart</button>
                 </div>
             }
         </div>
