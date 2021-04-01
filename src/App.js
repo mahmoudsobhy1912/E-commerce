@@ -7,6 +7,7 @@ import Product from "./components/Product";
 import Cart from "./components/Cart";
 
 function App() {
+
   return (
     <div className="App container">
       <BrowserRouter>
@@ -14,12 +15,8 @@ function App() {
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
-<<<<<<< HEAD
               <li><Link to="/Cart">Cart</Link></li>
               <li><Link to="/Signin">Sign In</Link></li>
-=======
-              <li className ="sign"><Link to="/Signin">Sign In</Link></li>
->>>>>>> cd30d4f27b28096e808113c2df4a5400464be71c
               <li><Link to="/Signup">Sign Up</Link></li>
             </ul>
           </nav>

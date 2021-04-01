@@ -95,46 +95,40 @@ button{
 	padding: 10px;
 	font-weight: bold;
 	font-size: medium;
-	background-color: #700608;
+	background-color: #1A355B;
 	color: #ffffff;
 	border: none ;
 	border-radius: 5px;
 }
 
-input:focus{
-	outline-color: #700608;
+select:focus, input:focus{
+	outline-color: #1A355B;
 }
 
 button:hover{
-	background-color: #cf1c1f;
+	background-color: #2678c9a1;
 }
 
 button:focus{
-	outline-color: #700608;
+	outline-color: #2d5379a1;
 }
 
-.home p{
+.home p {
 	text-align: center;
 	padding: 10px 0px;
-	font-size: 60px;
-	font-weight:450;
-}
-
-.home .label{
-	width:400px;
-	padding: 5px 0px 70px 0px;
-	text-align: center;
-
+	font-size: 50px;
+	font-weight:350;
 }
 
 .home .label label{
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 25px;
+	font-weight:350;
 }
 
 select{
 	padding: 5px;
 	width: 150px;
+	outline-color: #2d5379a1;
 }
 
 .home li{
@@ -157,7 +151,7 @@ select{
 }
 
 .card p{
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .card a{
@@ -168,7 +162,7 @@ select{
 
 .card a:hover{
 	font-size: 55px;
-	color: rgb(116, 112, 112);
+	color: rgb(61, 61, 61);
 }
 
 .product{
@@ -186,4 +180,10 @@ select{
 .product img{
 	max-width: 400px;
 	float: left;
+}
+
+.filter { 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }

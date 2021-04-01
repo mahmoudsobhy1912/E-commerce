@@ -23,16 +23,17 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            <p>Welcome to our Store :)</p>
-            <div className="label">
-                <label htmlFor="Category">Category:</label>
-                <select name="Category" onChange={handelFilter}>
-                    <option value="">All</option>
-                    <option value="Laptop">Laptop</option>
-                    <option value="Headphones">Headphones</option>
-                    <option value="Mobile">Mobile</option>
-                </select>
-               
+            <div className="filter">
+                <p>Welcome to our Store :)</p>
+                <div className="label">
+                    <label htmlFor="Category">Category: </label>
+                    <select name="Category" onChange={handelFilter}>
+                        <option value="">All</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Headphones">Headphones</option>
+                        <option value="Mobile">Mobile</option>
+                    </select>
+                </div>
             </div>
 
             {
