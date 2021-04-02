@@ -134,7 +134,9 @@ select{
 .home li{
 	list-style: none;
 	width: 30%;
-	padding: 15px 30px;
+	padding: 30px 40px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.384);
 }
 .list{
 	display: flex;
@@ -143,6 +145,7 @@ select{
 	justify-content: space-between;
 	align-items: center;
 }
+
 
 .card img{
 	width: 180px;
